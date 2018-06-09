@@ -1,0 +1,194 @@
+<html><head><title>Hotel Gallery</title></head>
+<link href="bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+<style>
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    
+    border-color:#000000;
+    border-width: 20px;
+}
+</style>
+<body background="bg.jpg">
+<hr>
+<h1><b><center><font face="Medusa Gothic" size=100 color="yellow"><!a href="hotel.html" style="text-decoration:none;" style="color:white;"!>HOTEL GRAND<!/a!></font></center></b></h1>
+<h4><center><font color="White">Share a Grand Experience</font></center></h4>
+<br>
+<div class="alert alert-danger" role="alert"><h3><font face="Comic Sans MS" color="black">GALLERY</font></h3></div><br></div>
+<br>
+<div class="col-md-3"> <img id="myImg" src="d.jpg" height="225px" width="300px"><div id="myModal" class="modal"><span class="close">&times;</span><img class="modal-content" id="img01"><div id="caption"></div></div><br><br>
+                       <img id="myImg" src="room2.jpg" height="225px" width="300px"><div id="myModal" class="modal"><span class="close">&times;</span><img class="modal-content" id="img01"><div id="caption"></div></div><br><br>
+					   <img id="myImg" src="room3.jpg" height="225px" width="300px"><div id="myModal" class="modal"><span class="close">&times;</span><img class="modal-content" id="img01"><div id="caption"></div></div><br><br>
+					   <img id="myImg" src="room4.jpg" height="225px" width="300px"><div id="myModal" class="modal"><span class="close">&times;</span><img class="modal-content" id="img01"><div id="caption"></div></div><br><br>
+					   </div>
+
+<div class="col-md-3"><img src="room5.jpg" height="225px" width="300px"><br><br><img src="room6.jpg" height="225px" width="300px"><br><br><img src="room7.jpg" height="225px" width="300px"><br><br><img src="room8.jpg" height="225px" width="300px"><br><br></div>
+
+<div class="col-md-3"><img src="room9.jpg" height="225px" width="300px"><br><br><img src="room10.jpg" height="225px" width="300px"><br><br><img src="b.jpg" height="225px" width="300px"><br><br><img src="k.jpg" height="225px" width="300px"><br><br></div>
+
+<div class="col-md-3"><img src="l.jpg" height="225px" width="300px"><br><br><img src="room14.jpg" height="225px" width="300px"><br><br><img src="room12.jpg" height="225px" width="300px"><br><br><img src="c.jpg" height="225px" width="300px"><br><br></div>
+<br><br><br>
+
+<!-- The Modal -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!________________________________________________________________________________________________________________________________!>
+<nav class="navbar navbar-inverse">
+<div class="col-md-2">
+     <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+                <li><a href="hotel.html">Home</a></li><br>
+                <li><a href="contact.html">Contact us </a></li><br>
+                 <li><a href="about us.html">About us</a></li>
+              </ul>
+           </div>
+      </div>
+</div>
+<!******************!>
+<div class="col-md-10">
+<h3><FONT COLOR="WHITE"><B>OUR PARTNERS:</b> </font></h3><br>
+<img src="mmp.png" width=100 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="gib.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="expedia.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="hilton.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="trivago.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="marriot.png" width=100 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</nav>
+<script src="bootstrap.min.js"> </script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</body>
+</html>

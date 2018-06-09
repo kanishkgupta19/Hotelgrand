@@ -1,0 +1,18 @@
+HELLO 
+As the Internet becomes more and more ubiquitous, Many companies, restaurant, hotels,etc have created their websites to attract and spread their business across the world. So, we made a Website of a hotel named HOTEL GRAND. this website helps the customer to
+->view the rooms and their price before booking
+->can know everything about the hotel.
+->The website also allow the user to contact to the 
+->can easily view the entire hotel from anywhere and at anytime.
+->can book any type of room in advance from anywhere, at anytime.
+->User can also able to view the events occur at the hotel and also able to book the venue for an event in advance.
+
+made by:- KANISHK GUPTA
+                  PRANAV GUPTA
+                 DAYANAND PATHAK
+                            CSE-B    
+HMR INST. OF TECHNOLOGY AND MANAGEMENT, HAMIDPUR 
+
+
+*******************INSTRUCTION******************************
+open "hotel.html" for the main Homepage

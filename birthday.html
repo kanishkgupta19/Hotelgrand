@@ -1,0 +1,68 @@
+<html>
+<head> <title> Hotel Grand Events</title>
+</head>
+<link href="bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+p.padding {
+    padding-left: 2cm; 
+}
+p.padding2 {
+    padding-right: 2cm;
+}
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    
+    border-color:#000000;
+    border-width: 20px;
+}
+</style>
+
+<body background="birthday.jpeg">
+<hr>
+<h1><b><center><font face="Medusa Gothic" size=100 color="yellow"><!a href="hotel.html" style="text-decoration:none;" style="color:white;"!>HOTEL GRAND<!/a!></font></center></b></h1>
+<h4><center><font color="black">Share a Grand Experience</font></center></h4>
+<div class="alert alert-danger" role="alert"><h3><font face="Comic Sans MS" color="black"> EVENTS:</font></h3></div><br></div>
+<br>
+<center><h1><b>BIRTHDAY PARTY EVENT</B></h1></center>
+<div align="center">
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="b1.jpg" style="width:100%">
+  <img class="mySlides" src="b2.jpg" style="width:100%">
+  <img class="mySlides" src="b3.jpg" style="width:100%">
+</div></div>
+<h3><b>Our hotel arranges Birthday Parties for our costumers. The customers will get a excellent and fully decorative halls according to the customer's demand. We gurantee you , that you will get a never seen before experience and exclusive design for the celebration.<br></b>
+<ul>
+<li><b>Fully AC party hall.</b>
+<li><b>Full arrangement for Caterers and designers</b>
+<li><b>High quality halls and service.</b>
+</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<center><a href="Events.html"><button class="btn btn-danger btn-lg">Back </button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="eventbook.html"><button class="btn btn-success btn-lg">Book Event</button></a></center><br><br>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
+

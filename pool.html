@@ -1,0 +1,70 @@
+<html>
+<head> <title> Hotel Grand Events</title>
+</head>
+<link href="bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+p.padding {
+    padding-left: 2cm; 
+}
+p.padding2 {
+    padding-right: 2cm;
+}
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    
+    border-color:#000000;
+    border-width: 20px;
+}
+</style>
+
+<body background="pool.jpg">
+<hr>
+<h1><b><center><font face="Medusa Gothic" size=100 color="yellow"><!a href="hotel.html" style="text-decoration:none;" style="color:white;"!>HOTEL GRAND<!/a!></font></center></b></h1>
+<h4><center><font color="white"><b>Share a Grand Experience</b></font></center></h4>
+<div class="alert alert-danger" role="alert"><h3><font face="Comic Sans MS" color="black"> EVENTS:</font></h3></div><br></div>
+<br>
+<center><h1><b><font color="white">POOL PARTY EVENT</font></B></h1></center>
+<div align="center">
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="sp1.jpg" style="width:100%">
+  <img class="mySlides" src="sp2.jpg" style="width:100%">
+  <img class="mySlides" src="sp3.jpg" style="width:100%">
+  <img class="mySlides" src="sp4.jpg" style="width:100%">
+</div></div>
+<h3><font color="white"><b>Hotel Grand gives you an exclusive oppurtunity to party with your friends and family at World's Best swimming pool, which gives you a royal experience.
+<ul>
+<li><b>Wonderful performances to entertain the guests.</b>
+<li><b>Full arrangement for Caterers and jacuzzi at the world's best pool.</b>
+<li><b>Hot Springs also available at our Hotel.</b>
+<li><b>Relaxing music played at The pool.</b>
+</h3><br>
+<center><a href="Events.html"><button class="btn btn-primary btn-lg">Back </button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="eventbook.html"><button class="btn btn-success btn-lg">Book Event</button></a></center><br><br>
+</font>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
+

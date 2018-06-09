@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<link href="bootstrap.min.css" rel="stylesheet">
+<head>
+<style>
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    
+    border-color:#000000;
+    border-width: 20px;
+}
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: none;
+    background-color: #060606;
+    width: 24%;
+    height: 500px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: White;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 76%;
+    border-left: none;
+    height: 300px;
+}
+</style>
+</head>
+<body background="bg.jpg">
+<hr>
+<h1><b><center><font face="Medusa Gothic" size=100 color="yellow"><!a href="hotel.html" style="text-decoration:none;" style="color:white;"!>HOTEL GRAND<!/a!></font></center></b></h1>
+<h4><center><font color="White">Share a Grand Experience</font></center></h4>
+
+<div class="alert alert-danger" role="alert"><h3><font face="Comic Sans MS" color="black">ABOUT US</font></h3></div><br></div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'AboutUs')" id="defaultOpen">History</button>
+  <button class="tablinks" onclick="openCity(event, 'Founders')">Founders</button>
+  <button class="tablinks" onclick="openCity(event, 'Executives')">Executives</button>
+  <button class="tablinks" onclick="openCity(event, 'Partners')">Our Partners</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us</button>
+</div>
+
+<div id="AboutUs" class="tabcontent">
+  <h1><font color="Yellow">History</font></h1>
+  <div class="alert alert-info"><h2>Hotel Grand was founded on 1989 by Kanishk Gupta. It was firstly established in India and then it grow on to spread its wings across the world.
+  Further Hotel Grand developed and reached among the worlds most royal and luxurious hotels. It has more than 200 rooms with 10 villas and 7 mega function/party halls. Its an ISO certified 7-Star hotel now.
+  We treat Every guest of our hotel like a prince/princess. We fulfill every requirement of our guests and b/c of vthis it provide world's best room service in the world.</div>
+</div>
+
+<div id="Founders" class="tabcontent">
+  <h1><font color="Yellow">Founders</font></h1>
+  <div>
+<div class="alert alert-warning"><h2><b> </u>KANISHK GUPTA </u></b>(C.F.O, Owner,H.O.D)</h2><h4>B.Tech-IIT Delhi,MBA IIM Mumbai</h4></div>
+<div class="alert alert-warning"><h2><b> <u>PRANAV GUPTA</u> </b>(C.E.O, Founder)</h2><h4>B.Tech-IIT Bombay,MBA IIM Banglore</h4></div>
+<div class="alert alert-warning"><h2><b> DAYANAND PATHAK </b>(C.O.O, Treasurer)</h2><h4>B.Tech-IP University,MBA IIM Lucknow</h4></div>
+</div>
+</div>
+
+<div id="Executives" class="tabcontent">
+  <h1><font color="Yellow">Executives</font></h1>
+  <div class="alert alert-warning">
+  <img src="mark.jpg" height=150 width=150 border:color="white" size=100>&nbsp; &nbsp;<img src="mukesh.jpg" height=150 width=250>&nbsp; &nbsp;&nbsp; &nbsp;<img src="bill.jpg" height=150 width=250><br> <br>
+<img src="steve.jpg" height=200 width=200>&nbsp; &nbsp;&nbsp; &nbsp;<img src="jeff.jpg" height=180 width=180>
+&nbsp; &nbsp;&nbsp; &nbsp;<img src="ob.jpg" height=150 width=250></div>
+</div>
+
+<div id="Partners" class="tabcontent">
+<h1><font color="Yellow">Our Partners</font></h1>
+<div class="col-md-3"></div>
+<div class="col-md-7">
+<img src="partners.jpg"  align="right" height="450px" width="620px">
+</div>
+</div>
+
+<div id="Contact" class="tabcontent">
+<h1><font color="Yellow">Contact Us</font></h1>
+<div class="col-md-3"></div>
+<div class="col-md-7">
+
+<img src="contact.png"  align="right" height="390px" width="720px"></div>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------------!>
+<nav class="navbar navbar-inverse">
+<div class="col-md-2">
+     <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+                <li><a href="hotel.html">Home</a></li><br>
+                <li><a href="contact.html">Contact us </a></li><br>
+                 <li><a href="about us.html">About us</a></li>
+              </ul>
+           </div>
+      </div>
+</div>
+<!******************!>
+<div class="col-md-10">
+<h3><FONT COLOR="WHITE"><B>OUR PARTNERS:</b> </font></h3><br>
+<img src="mmp.png" width=100 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="gib.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="expedia.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="hilton.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="trivago.png" width=120 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="marriot.png" width=100 height=50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</nav>
+<!------------------------------------------------------------------------------------------------------------------------------------------!>
+
+     
+</body>
+</html> 
